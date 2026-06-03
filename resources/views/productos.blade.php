@@ -7,14 +7,16 @@
         <div class="producto">
             <h3>{{ $producto['nombre'] }}</h3>
             <p>Precio: ${{ $producto['precio'] }}</p>
+            @if($producto['precio'] > 3000)
+                <p>Producto destacado</p>
+            @endif
             @if($producto['stock'] > 0)
-                <p class="con-stock">Stock disponible: {{ $producto['stock']
-                            }}</p>
+                <p class="con-stock">Stock disponible: {{ $producto['stock'] }}</p>
             @else
-                <p class="sin-stock">Sin stock</p>
+                <p class="sin-stock">Sin Stock</p>
             @endif
         </div>
     @empty
-        <p>No hay productos disponibles en este momento. ¡Vuelve pronto!</p>
+        <p>No hay productos en venta, Vuelva Pronto</p>
     @endforelse
 @endsection

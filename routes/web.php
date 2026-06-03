@@ -21,6 +21,16 @@ Route::get('/productos', function () {
 
     return view('productos', ['productos' => $productos]);
 });
+
+// si se desea ver el arreglo vacio descomentarlo
+// Route::get('/productos', function () {
+//     $productos = [
+
+//     ];
+
+//     return view('productos', ['productos' => $productos]);
+// });
+
 Route::get('/contacto', function () {
     $email = 'contacto@miempresa.com';
 
