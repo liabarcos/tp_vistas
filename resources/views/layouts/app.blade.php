@@ -65,11 +65,14 @@
         <h1>Mi sitio vistas</h1>
 
         <nav>
+
             <a href="/">Inicio</a>
             <a href="/productos">Productos</a>
             <a href="/contacto">Contacto</a>
             <a href="/nosotros">Nosotros</a>
+
         </nav>
+
     </header>
     <main> @yield('contenido') </main>
     <footer>
