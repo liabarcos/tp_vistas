@@ -69,7 +69,6 @@
             <a href="/productos">Productos</a>
             <a href="/contacto">Contacto</a>
             <a href="/nosotros">Nosotros</a>
-
         </nav>
     </header>
     <main> @yield('contenido') </main>
